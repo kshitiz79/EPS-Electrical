@@ -1,0 +1,46 @@
+{
+    "powerQualitySolutionsProducts":[
+        {
+            "id":1,
+            "name":"Hybrid Power Factor Correction Panel",
+            "imageUrl":"/assets/random2.jpeg"
+        },
+        {
+            "id":2,
+            "name":"Hybrid Power Factor Correction Panel",
+            "imageUrl":""
+        },
+        {
+            "id":3,
+            "name":"Hybrid Power Factor Correction Panel",
+            "imageUrl":""
+        },
+        {
+            "id":4,
+            "name":"Hybrid Power Factor Correction Panel",
+            "imageUrl":""
+        },
+        {
+            "id":5,
+            "name":"Hybrid Power Factor Correction Panel",
+            "imageUrl":""
+        }
+    ],
+    "voltageRegulationSolutionProducts":[
+        {
+            "id":1,
+            "name":"Dynamic Voltage Regulator",
+            "imageUrl":""
+        },
+        {
+            "id":2,
+            "name":"Hybrid Power Factor Correction Panel",
+            "imageUrl":""
+        },
+        {
+            "id":3,
+            "name":"Hybrid Power Factor Correction Panel",
+            "imageUrl":""
+        }
+    ]
+}
