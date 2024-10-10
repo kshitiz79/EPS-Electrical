@@ -5,6 +5,7 @@ import Home from './pages/Home/Home';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Layout from './layout/layout';
+import ProductNservices from './pages/ProductNservices/ProductNservices';
 
 
 
@@ -12,19 +13,19 @@ import Layout from './layout/layout';
 function App() {
   return (
 
-      <Router>
+    <Router>
 
-        <Routes>
-=
-<Route path="/" element={<Layout />}>
+      <Routes>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="productandservices" element={<ProductNservices />} />
           <Route path="contact" element={<Contact />} />
         </Route>
 
 
-        </Routes>
-      </Router>
+      </Routes>
+    </Router>
 
   );
 }
