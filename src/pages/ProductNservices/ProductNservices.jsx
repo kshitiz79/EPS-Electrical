@@ -14,6 +14,10 @@ const ProductNservices = () => {
                 title="Voltage Regulation Solution Products" 
                 products={data.voltageRegulationSolutionProducts} 
             />
+              <ProductSection 
+                title="Voltage Regulation Solution Products" 
+                products={data.evMobileSolution} 
+            />
         </div>
     );
 };

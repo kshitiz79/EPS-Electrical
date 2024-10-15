@@ -64,10 +64,15 @@ const Footer = () => {
             <div>
            < h2 className="font-semibold text-lg ">Contact Us :</h2>
           
-          <ul className='mt-4'>
-          <li> <span className='font-extrabold'>Call us: </span>+91 9901034214</li>
-          <li> <span className='font-extrabold'>Mail: </span>rajeev@epselectricals.com</li>
-          </ul>
+           <li> 
+  <span className='font-extrabold'>Call us: </span>
+  <a href="tel:+919901034214">+91 9901034214</a>
+</li>
+<li> 
+  <span className='font-extrabold'>Mail: </span>
+  <a href="mailto:rajeev@epselectricals.com">rajeev@epselectricals.com</a>
+</li>
+
 
 
             </div>
@@ -93,7 +98,13 @@ const Footer = () => {
 <div className="max-w-7xl mx-auto   ">
 <div className=" pt-8 flex flex-col sm:flex-row justify-between text-sm mb-9">
           <p>COPYRIGHT © EPS Electricals 2024</p>
-          <p>Design By amediaservices.com</p>
+          <p>
+  Design And Managed By {' '}
+  <a href="https://rbshstudio.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+    RBSH Studio
+  </a>
+</p>
+
         </div>
 </div>
 </footer>

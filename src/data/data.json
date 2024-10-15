@@ -1,46 +1,409 @@
 {
-    "powerQualitySolutionsProducts":[
-        {
-            "id":1,
-            "name":"Hybrid Power Factor Correction Panel",
-            "imageUrl":"/assets/random2.jpeg"
-        },
-        {
-            "id":2,
-            "name":"Hybrid Power Factor Correction Panel",
-            "imageUrl":""
-        },
-        {
-            "id":3,
-            "name":"Hybrid Power Factor Correction Panel",
-            "imageUrl":""
-        },
-        {
-            "id":4,
-            "name":"Hybrid Power Factor Correction Panel",
-            "imageUrl":""
-        },
-        {
-            "id":5,
-            "name":"Hybrid Power Factor Correction Panel",
-            "imageUrl":""
-        }
+  
+    "powerQualitySolutionsProducts": [
+      {
+        "id": 1,
+        "name": "Hybrid Power Factor Correction Panel",
+        "imageUrl": "/Product/powerquality1.jpg",
+        "features": [
+          "Fast 32 bit digital signal processor",
+          "Synchronous Rotating Frame Principal for best performance",
+          "Ultra fast compensation",
+          "Proven performance on welding",
+          "Selective Harmonic compensation",
+          "Step-less Reactive Power Compensation",
+          "Negative Sequence Compensation (load balancing)",
+          "Zero Sequence Compensation (neutral compensation)",
+          "15 possible Priority Selection settings for maximum flexibility",
+          "Smart auto foldback to avoid over loading of filter",
+          "7″ touch screen display",
+          "Ethernet based remote monitoring",
+          "MODBUS RTU, USB, SD Card",
+          "Internal CAN Communication",
+          "Closed Loop & Open Loop operation",
+          "Operator Activity Log",
+          ">1,00,000 time stamped events can be logged in internal NAND memory"
+        ],
+        "benefits": [
+          "Performance of Active with cost effectiveness of passive",
+          "Compliance with prescribed harmonic limits – No penalty",
+          "Unity Power Factor – higher savings",
+          "Reduced energy (kVAh) charges – higher savings",
+          "Reduced peak demand charges – higher savings",
+          "Reduced fuel consumption in generators – higher savings",
+          "Ultra fast compensation – effective with fast fluctuating load",
+          "Proven performance on welding",
+          "Optimum capacity utilization of electrical infrastructure",
+          "Optimum capacity utilization of backup generators",
+          "Improved voltage profile",
+          "Reduced risk of transformer failure – higher uptime",
+          "Reduced risk of equipment failure – higher uptime",
+          "Increased operational reliability – higher uptime",
+          "Compact footprint",
+          "Indigenous design, low maintenance and prompt service"
+        ]
+      },
+      {
+        "id": 2,
+      "name": "Detuned Reactor",
+      "imageUrl": "/Product/powerquality2.png",
+      "features": [
+        "Special design for reduced heating",
+        "Vacuum Impregnated",
+        "Rugged design for harsh environments",
+        "Thermal protection against over temperature",
+        "Low Noise"
+      ],
+      "benefits": [
+        "Remove harmonic amplification",
+        "Increase the life of capacitors",
+        "Avoid harmonic resonance in the network",
+        "Reduce cable and transformer losses",
+        "Avoid over current during hard switching of capacitors"
+      ],
+      "specifications": [
+        { "property": "Description", "value": "Three phase, dry, impregnated, magnetic circuit" },
+        { "property": "Type", "value": "Iron core" },
+        { "property": "Material Type", "value": "Aluminium", "value_alt": "Copper" },
+        { "property": "Relative Impedance", "value": "5.67%", "value_alt": "7.00%, 14.00%" },
+        { "property": "Ratings (in kVAR)", "value": "10, 12.5, 15, 20, 25, 50, 75, 100, higher on request" },
+        { "property": "Degree of Protection", "value": "IP00" },
+        { "property": "Insulation class", "value": "Class H" },
+        { "property": "Linearity", "value": "175% (standard) and 200% on request" },
+        { "property": "Rated voltage", "value": "400 to 690V – 50Hz" },
+        { "property": "Inductance tolerance per phase", "value": "(+/-) 2.5%" },
+        { "property": "Insulation level", "value": "upto 1.1KV" },
+        { "property": "Thermal Protection", "value": "Dry contact normally closed, 250VAC 2A" },
+        { "property": "Cooling requirement", "value": "Forced Air" },
+        { "property": "Standards", "value": "IS 5553 – 1990" },
+        { "property": "Use", "value": "Indoor" },
+        { "property": "Storage Temp", "value": "(-)40 degC to 60 degC" },
+        { "property": "Relative Humidity", "value": "upto 80%" },
+        { "property": "Operating Temperature", "value": "upto 55 degC ambient" },
+        { "property": "Altitude", "value": "upto 1000m" }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Dynamic Voltage Regulator",
+        "imageUrl": "/Product/powerquality3.png",
+        "features": [
+          "No step changes in voltage",
+          "Instantaneous & Continuous voltage regulation",
+          "Unbalance voltage correction",
+          "No risk of voltage surge",
+          "Extremely accurate output voltage regulation over a wide range of input",
+          "No moving parts. No risk of wear & tear",
+          "Uses IGBTs to eliminate sparks or noise",
+          "Regulates both sag and swell events",
+          "Independent voltage regulation in individual phases"
+        ],
+        "benefits": [
+          "Effective isolation from grid disturbances and fluctuations",
+          "Efficient operation of sensitive equipment",
+          "Prevent spurious tripping and failures",
+          "Increased Productivity",
+          "Improved product quality. Reduced rejections",
+          "No batteries needed. No recurring expenses",
+          "No moving parts. Long operating life",
+          "Compact design. Small footprint",
+          "Works with regenerative loads",
+          "Internal ByPass mechanism"
+        ],
+        "specifications": [
+          { "property": "Models", "value": "p2p-240-dvr3-25P, p2p-240-dvr3-20P, p2p-240-dvr3-12.5P" },
+          { "property": "Input Voltage Range (Ph-N)", "value": "180-300Vrms, 190-285Vrms, 210-270Vrms" },
+          { "property": "Nominal Output (Ph-N)", "value": "240Vrms +/- 0.5% (typical), +/- 1% (max)" },
+          { "property": "Frequency (Hz)", "value": "50Hz +/- 5%" },
+          { "property": "Connection", "value": "3P + N" },
+          { "property": "Technology", "value": "IGBT based converter technology, Closed loop control, Dual voltage (ip/op) and converter current tracking, Independent voltage regulation for each phase" },
+          { "property": "Reaction Time", "value": "< 100 us" },
+          { "property": "Protections", "value": "Output disconnector switch, Internal Bypass mode, Output under/over voltage protection, Semiconductor fuses, Over current, Soft Start, Input MCB/MCCB (optional), Type 2 surge suppression" },
+          { "property": "Efficiency", "value": "> 98.5% (typical)" },
+          { "property": "Environment", "value": "Indoor Installation (IP42), Upto 45 degrees (with adequate air circulation), Upto 95% relative humidity (non-condensing), Altitude upto 1000m" }
+        ]
+      },
+      
+      {
+        "id": 4,
+        "name": "3-Level Active Harmonic Filter",
+        "imageUrl": "/Product/powerquality4.png",
+        "features": [
+          "Fast 32 bit digital signal processor",
+          "Latest 3-Level NPC2 converter architecture",
+          "Advanced RCT snubber with Active Damping",
+          "Synchronous Rotating Frame Principal for best performance",
+          "Ultra fast compensation",
+          "Proven performance on welding",
+          "Harmonic Attenuation of >98%",
+          "High Efficiency of >98%",
+          "Selective Harmonic compensation",
+          "Leading/Lagging Reactive Power Compensation",
+          "Negative Sequence Compensation (load balancing)",
+          "15 possible Priority Selection settings for maximum flexibility",
+          "Smart auto foldback to avoid overloading of filter",
+          "7″ touch screen display",
+          "Ethernet based remote monitoring",
+          "MODBUS RTU, USB, SD Card",
+          "Internal CAN Communication",
+          "Closed Loop & Open Loop operation",
+          "Paralleling of up to 32 filters for higher capacity",
+          "Operator Activity Log",
+          ">2,00,000 time stamped events can be logged in internal NAND memory"
+        ],
+        "benefits": [
+          "Compliance with prescribed harmonic limits – No penalty",
+          "Unity Power Factor – higher savings",
+          "Reduced energy (kVAh) charges – higher savings",
+          "Reduced peak demand charges – higher savings",
+          "Reduced fuel consumption in generators – higher savings",
+          "Ultra fast compensation – effective with fast fluctuating load",
+          "Proven performance on welding",
+          "Optimum capacity utilization of electrical infrastructure",
+          "Optimum capacity utilization of backup generators",
+          "Improved voltage profile",
+          "Reduced risk of transformer failure – higher uptime",
+          "Reduced risk of equipment failure – higher uptime",
+          "Increased operational reliability – higher uptime",
+          "Compact footprint",
+          "Indigenous design, low maintenance and prompt service"
+        ],
+        "specifications": [
+          { "property": "Model", "value": "p2p-415-apf3T" },
+          { "property": "Network Voltage", "value": "415Vrms +/-10%/-15%" },
+          { "property": "Switching Architecture", "value": "NPC-2 Architecture, Advanced RCT snubber with Active Damping" },
+          { "property": "Connection", "value": "3P/4W" },
+          { "property": "Grid Frequency", "value": "50Hz +/-5% (60Hz available on request)" },
+          { "property": "Modularity", "value": "Upto 32 units" },
+          { "property": "Harmonic Filtering", "value": "2nd to 51st order" },
+          { "property": "Individual Harmonic Selection", "value": "Yes" },
+          { "property": "Harmonic Attenuation", "value": ">98%" },
+          { "property": "Reactive Compensation", "value": "Yes" },
+          { "property": "Negative Sequence Compensation", "value": "Yes" },
+          { "property": "Compensation", "value": "Open/Closed Loop" },
+          { "property": "Reaction Time", "value": "< 50 micro seconds" },
+          { "property": "Filter Consumption", "value": "<2.0% of rated capacity (typical)" },
+          { "property": "CT Specifications", "value": "Ratio based on peak load, 0.5 class or better, 15VA or more" },
+          { "property": "Standards", "value": "IEEE 519-1992 harmonic standards" },
+          { "property": "Interface", "value": "7″ touch screen" },
+          { "property": "Remote Interface", "value": "Ethernet, MODBUS RTU" },
+          { "property": "Configuration Settings", "value": "Through User Interface and USB key" },
+          { "property": "Protection Class", "value": "IP41 (Higher on request)" },
+          { "property": "Operating Temperature", "value": "Upto 45 degrees with adequate ventilation (upto 55 degrees with derating)" },
+          { "property": "Operating Environment", "value": "Indoor, Dust Free" },
+          { "property": "Relative Humidity", "value": "Maximum 95% (non condensing)" },
+          { "property": "Altitude", "value": "Upto 1000m" }
+        ]
+      },
+      
+      {
+        "id": 5,
+        "name": "Active Harmonic Filter",
+        "imageUrl": "/Product/powerquality5.png",
+        "features": [
+          "Fast 32 bit digital signal processor",
+          "Synchronous Rotating Frame Principal for best performance",
+          "Ultra fast compensation",
+          "Proven performance on welding",
+          "Harmonic Attenuation of more than 96%",
+          "Selective Harmonic compensation",
+          "Leading/Lagging Reactive Power Compensation",
+          "Negative Sequence Compensation (load balancing)",
+          "Zero Sequence Compensation (neutral compensation)",
+          "15 possible Priority Selection settings for maximum flexibility",
+          "Smart auto fold-back to avoid overloading of filter",
+          "7″ touch screen display",
+          "Ethernet based remote monitoring",
+          "MODBUS RTU, USB, SD Card",
+          "Internal CAN Communication",
+          "Closed Loop & Open Loop operation",
+          "Paralleling of upto 32 filters for higher capacity",
+          "Operator Activity Log",
+          ">1,00,000 time stamped events can be logged in internal NAND memory"
+        ],
+        "benefits": [
+          "Compliance with prescribed harmonic limits – No penalty",
+          "Unity Power Factor – higher savings",
+          "Reduced energy (kVAh) charges – higher savings",
+          "Reduced peak demand charges – higher savings",
+          "Reduced fuel consumption in generators – higher savings",
+          "Ultra fast compensation – effective with fast fluctuating load",
+          "Proven performance on welding",
+          "Optimum capacity utilization of electrical infrastructure",
+          "Optimum capacity utilization of backup generators",
+          "Improved voltage profile",
+          "Reduced risk of transformer failure – higher uptime",
+          "Reduced risk of equipment failure – higher uptime",
+          "Increased operational reliability – higher uptime",
+          "Compact footprint",
+          "Indigenous design, low maintenance and prompt service"
+        ],
+        "specifications": [
+          { "property": "Models", "value": "p2p-415-apf3, p2p-415-apf4" },
+          { "property": "Network Voltage", "value": "415Vrms +/-10%/-15%" },
+          { "property": "Connection", "value": "3P/4W, 4P/4W" },
+          { "property": "Grid Frequency", "value": "50Hz +/-5% (60Hz available on request)" },
+          { "property": "Modularity", "value": "Upto 32 units" },
+          { "property": "Harmonic Filtering", "value": "2nd to 51st order" },
+          { "property": "Individual Harmonic Selection", "value": "Yes" },
+          { "property": "Harmonic Attenuation", "value": ">96%" },
+          { "property": "Reactive Compensation", "value": "Yes" },
+          { "property": "Negative Sequence Compensation", "value": "Yes" },
+          { "property": "Zero Sequence Compensation", "value": "Yes" },
+          { "property": "Compensation", "value": "Open/Closed Loop" },
+          { "property": "Reaction Time", "value": "<100 micro seconds" },
+          { "property": "Filter Consumption", "value": "<3.0% of rated capacity (typical)" },
+          { "property": "CT Specifications", "value": "Ratio based on peak load, 0.5 class or better, 15VA or more" },
+          { "property": "Standards", "value": "IEEE 519-1992 harmonic standards" },
+          { "property": "Interface", "value": "7″ touch screen" },
+          { "property": "Remote Interface", "value": "Ethernet, MODBUS RTU" },
+          { "property": "Configuration Settings", "value": "Through User Interface and USB key" },
+          { "property": "Protection Class", "value": "IP41 (Higher on request)" },
+          { "property": "Operating Temperature", "value": "Upto 45 degrees with adequate ventilation (upto 55 degrees with derating)" },
+          { "property": "Operating Environment", "value": "Indoor, Dust Free" },
+          { "property": "Relative Humidity", "value": "Maximum 95% (non condensing)" },
+          { "property": "Altitude", "value": "Upto 1000m" }
+        ]
+      },
+      
+      {
+        "id": 6,
+        "name": "600VA to 4.8 MW UPS Range",
+        "imageUrl": "/Product/powerquality6.png"
+     
+      },
+      {
+        "id": 7,
+        "name": "LV/MV Range of Capacitor",
+        "imageUrl": "/Product/powerquality7.png",
+        "features": [
+          "Intelligent Relay with Programmable 6/8/12 Stages. (Panel with more than 12 steps in tandem operation of relay)",
+          "Truly based on IEC 61921",
+          "IP4X Design",
+          "Contactor Switching & Thyristor Switching",
+          "Compartmentalized & Non-Compartmentalized Design",
+          "Specially Designed Harmonic Filter APFC/RTPFC panels",
+          "Design as per Customer"
+        ],
+        "benefits": [
+          "Capacitor Types:",
+          "APP",
+          "MPP",
+          "MPP Unique - Ultra Heavy Duty",
+          "MV APP"
+        ]
+      }
     ],
-    "voltageRegulationSolutionProducts":[
+  
+  
+    "voltageRegulationSolutionProducts": [
+      {
+        "id": 8,
+        "name": "Dynamic Voltage Regulator",
+        "imageUrl": "/Product/voltage1.png",
+        "features": [
+          "No step changes in voltage",
+          "Instantaneous & Continuous voltage regulation",
+          "Unbalance voltage correction",
+          "No risk of voltage surge",
+          "Extremely accurate output voltage regulation over a wide range of input",
+          "No moving parts. No risk of wear & tear",
+          "Uses IGBTs to eliminate sparks or noise",
+          "Regulates both sag and swell events",
+          "Independent voltage regulation in individual phases"
+        ],
+        "benefits": [
+          "Effective isolation from grid disturbances and fluctuations",
+          "Efficient operation of sensitive equipment",
+          "Prevent spurious tripping and failures",
+          "Increased Productivity",
+          "Improved product quality. Reduced rejections",
+          "No batteries needed. No recurring expenses",
+          "No moving parts. Long operating life",
+          "Compact design. Small footprint",
+          "Works with regenerative loads",
+          "Internal ByPass mechanism"
+        ],
+        "specifications": [
+          { "property": "Models", "value": "p2p-240-dvr3-25P, p2p-240-dvr3-20P, p2p-240-dvr3-12.5P" },
+          { "property": "Input Voltage Range (Ph-N)", "value": "180-300Vrms, 190-285Vrms, 210-270Vrms" },
+          { "property": "Nominal Output (Ph-N)", "value": "240Vrms +/- 0.5% (typical), +/- 1% (max)" },
+          { "property": "Frequency (Hz)", "value": "50Hz +/- 5%" },
+          { "property": "Connection", "value": "3P + N" },
+          { "property": "Technology", "value": "IGBT based converter technology, Closed loop control, Dual voltage (ip/op) and converter current tracking, Independent voltage regulation for each phase" },
+          { "property": "Reaction Time", "value": "< 100 us" },
+          { "property": "Protections", "value": "Output disconnector switch, Internal Bypass mode, Output under/over voltage protection, Semiconductor fuses, Over current, Soft Start, Input MCB/MCCB (optional), Type 2 surge suppression" },
+          { "property": "Efficiency", "value": "> 98.5% (typical)" },
+          { "property": "Environment", "value": "Indoor Installation (IP42), Upto 45 degrees (with adequate air circulation), Upto 95% relative humidity (non-condensing), Altitude upto 1000m" }
+        ]
+      },
+      {
+        "id": 9,
+        "name": "Servo Stabilizer",
+        "imageUrl": "/Product/voltage2.png",
+        "features": [
+          "Distortion less stabilizer which ensures safety of electrical equipment",
+          "Based on the principle of sine-wave superimposition",
+          "Efficiently bucks or boosts the incoming voltage by superimposing a variable voltage",
+          "Saves energy",
+          "Available with air cooled as well as oil cooled",
+          "Independent Phase tripping",
+          "Surge and Spike suppressor",
+          "Single phase prevention & phase reversal",
+          "Trip & Alarm for abnormalities",
+          "With Inbuilt isolation transformers"
+        ],
+        "benefits": [
+          "Improvement in motor efficiency",
+          "Better operational uptime and efficiency",
+          "Reduced maintenance cost of light fittings",
+          "Reduced demand and reduced energy bill",
+          "Reduced consumption of lighting load",
+          "Improved voltage quality enhances life of equipment",
+          "Reduced heating of motors and switchgears"
+        ],
+        "specifications": [
+          { "property": "Capacity", "value": "Upto 3500kVA" },
+          { "property": "Input Voltage Range", "value": "As per customer requirement" },
+          { "property": "Output Voltage", "value": "Settable 380-415V +/- 1%" },
+          { "property": "Input Frequency", "value": "47-53 Hz" },
+          { "property": "Correction Speed", "value": "75V/sec" },
+          { "property": "Control Type", "value": "Digital control" },
+          { "property": "Alarm", "value": "Audio in case of trip" },
+          { "property": "Waveform Distortion", "value": "Nil" },
+          { "property": "Efficiency", "value": ">98%" },
+          { "property": "Nature of Cooling", "value": "ONAN" },
+          { "property": "Protections", "value": "Overload, Short Circuit, Overvoltage Protection" },
+          { "property": "Protection Class", "value": "IP55" },
+          { "property": "Operating Temperature", "value": "0-45 degC" },
+          { "property": "Operating Environment", "value": "Indoor" },
+          { "property": "Relative Humidity", "value": "Maximum 95% (non condensing)" },
+          { "property": "Altitude", "value": "Upto 1000m" }
+        ]
+      }
+    ],
+
+
+    "evMobileSolution":[
         {
-            "id":1,
-            "name":"Dynamic Voltage Regulator",
-            "imageUrl":""
+            "id":10,
+            "name":"AC Charger",
+          "imageUrl":"/Product/ev1.png"
         },
         {
-            "id":2,
-            "name":"Hybrid Power Factor Correction Panel",
-            "imageUrl":""
+            "id":11,
+            "name":"AC Type 2 Charger",
+              "imageUrl":"/Product/ev2.png"
         },
         {
-            "id":3,
-            "name":"Hybrid Power Factor Correction Panel",
-            "imageUrl":""
+            "id":12,
+            "name":"DC Charger DC Charger",
+              "imageUrl":"/Product/ev3.png"
         }
+        
+      
     ]
+
+
+
 }

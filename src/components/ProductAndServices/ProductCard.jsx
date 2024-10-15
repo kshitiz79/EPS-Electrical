@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 import random from "/assets/random.png";
 
 const ProductCard = ({ product }) => {
@@ -11,12 +11,17 @@ const ProductCard = ({ product }) => {
             />
             <h2 className='text-center mt-4 text-lg font-semibold text-gray-800'>{product.name}</h2>
             <div className='flex items-center justify-around mt-5'>
-                <button className='bg-blue-700 hover:bg-blue-800 p-2 rounded-md text-white px-6'>
-                    View More
-                </button>
-                <button className='bg-green-600 hover:bg-green-700 p-2 rounded-md text-white px-6'>
-                    Contact US
-                </button>
+            <Link to={`/product/${product.id}`}>
+  <button className='bg-blue-700 hover:bg-blue-800 p-2 rounded-md text-white px-6'>
+    View More
+  </button>
+</Link>
+
+                <Link to="/contact">
+        <button className='bg-green-600 hover:bg-green-700 p-2 rounded-md text-white px-6'>
+          Contact Us
+        </button>
+      </Link>
             </div>
         </div>
     );
