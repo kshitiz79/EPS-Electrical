@@ -3,35 +3,35 @@ import { Link } from "react-router-dom";
 
 const products = [
   {
-    name: "Hybrid Power Factor Correction Panel",
+    name: "De Tuned Reactor -LV/MV",
     image: "./ProductRange/popular1.jpg",
   },
   {
-    name: "Detuned Reactor",
+    name: "Acitve Harmonic Filter",
     image: "./ProductRange/popular2.jpg",
   },
   {
-    name: "Dynamic Voltage Regulator",
+    name: "EV Charger",
     image: "./ProductRange/popular3.png",
   },
   {
-    name: "Servo Stabilizer",
+    name: "Hybrid Panel - APFC + AHF + SVG",
     image: "./ProductRange/popular4.png",
   },
   {
-    name: "600VA to 4.8 MW UPS Range",
+    name: "Servo Stabilizers",
     image: "./ProductRange/popular5.png",
   },
   {
-    name: "3-Level Active Harmonic Filter",
+    name: "Static VAR Generator - SVG",
     image: "./ProductRange/popular6.png",
   },
   {
-    name: "DC Charger",
+    name: "Subodhan Make LV/MV Capacitors - MPP/ABB",
     image: "./ProductRange/popular7.png",
   },
   {
-    name: "LV/MV Range of Capacitor",
+    name: "600 VA to 4.8 MW UPS Range",
     image: "./../../ProductRange/popular8.png",
   },
 ];

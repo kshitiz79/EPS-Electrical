@@ -3,7 +3,7 @@
     "powerQualitySolutionsProducts": [
       {
         "id": 1,
-        "name": "Hybrid Power Factor Correction Panel",
+        "name": "De Tuned Reactor - LV/MV",
         "imageUrl": "/Product/powerquality1.jpg",
         "features": [
           "Fast 32 bit digital signal processor",
@@ -45,7 +45,7 @@
       },
       {
         "id": 2,
-      "name": "Detuned Reactor",
+      "name": "Active Harmonic Filter",
       "imageUrl": "/Product/powerquality2.png",
       "features": [
         "Special design for reduced heating",
@@ -392,7 +392,7 @@
         },
         {
             "id":11,
-            "name":"AC Type 2 Charger",
+            "name":"EV Charger",
               "imageUrl":"/Product/ev2.png"
         },
         {
