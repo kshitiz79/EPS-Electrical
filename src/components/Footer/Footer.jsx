@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Footer = () => {
   return (
     <>
@@ -50,37 +48,35 @@ const Footer = () => {
         </div>
 
         <div className='border-t border-white mt-10'>
-
-
-<div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-8 '>
-<div>
-<h2 className="font-semibold text-lg ">Address :</h2>
-            <p className="mt-4">
-            Thirupalya Main Rd, Electronic City, Bengaluru, <br/> 
-            Bommasandra, Karnataka 560100.
-            </p>
+          <div className='flex flex-col md:flex-row justify-between gap-8 mt-8'>
+            <div>
+              <h2 className="font-semibold text-lg">Address :</h2>
+              <p className="">
+                Thirupalya Main Rd, Electronic City, Bengaluru, <br/> 
+                Bommasandra, Karnataka 560100.
+              </p>
             </div>
 
             <div>
-           < h2 className="font-semibold text-lg ">Contact Us :</h2>
-          
-           <li> 
-  <span className='font-extrabold'>Call us: </span>
-  <a href="tel:+919901034214">+91 9901034214</a>
-</li>
-<li> 
-  <span className='font-extrabold'>Mail: </span>
-  <a href="mailto:rajeev@epselectricals.com">rajeev@epselectricals.com</a>
-</li>
-
-
-
+              <h2 className="font-semibold text-lg">Contact Us :</h2>
+              <ul className="mt-4 space-y-2">
+                <li> 
+                  <span className='font-extrabold'>Call us: </span>
+                  <a href="tel:+919901034214">+91 9901034214</a>
+                </li>
+                <li> 
+                  <span className='font-extrabold'>Mail: </span>
+                  <a href="mailto:rajeev@epselectricals.com">rajeev@epselectricals.com</a>
+                </li>
+                <li> 
+                  <span className='font-extrabold'>Linkdin: </span>
+                  <a href="https://www.linkedin.com/company/eps-electricals/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
+                    EPS Electricals LinkedIn
+                  </a>
+                </li>
+              </ul>
             </div>
-
-</div>
-
-
-
+          </div>
         </div>
 
 
