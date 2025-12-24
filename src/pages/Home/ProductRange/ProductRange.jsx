@@ -10,10 +10,10 @@ const products = [
     name: "Acitve Harmonic Filter",
     image: "./ProductRange/popular2.jpg",
   },
-  {
-    name: "EV Charger",
-    image: "./ProductRange/popular3.png",
-  },
+  // {
+  //   name: "EV Charger",
+  //   image: "./ProductRange/popular3.png",
+  // },
   {
     name: "Hybrid Panel - APFC + AHF + SVG",
     image: "./ProductRange/popular4.png",
