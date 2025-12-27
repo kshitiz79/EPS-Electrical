@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import { FaLinkedinIn } from 'react-icons/fa';
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -8,47 +10,43 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const linkClasses = ({ isActive }) =>
+    `text-lg font-medium transition duration-300 ease-in-out ${isActive
+      ? 'text-cyan-700 border-b-2 border-cyan-700'
+      : 'text-black hover:text-cyan-700'
+    }`;
+
+  const mobileLinkClasses = ({ isActive }) =>
+    `block text-lg font-medium py-2 px-4 rounded transition duration-300 ease-in-out ${isActive ? 'bg-blue-600' : 'hover:bg-blue-600'
+    }`;
+
   return (
-    <nav className="bg-gradient-to-r from-white to-white p-4 shadow-lg">
+    <nav className="bg-white p-4 shadow-lg">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-black text-2xl font-bold">
-          <Link to="/">
-            <img src="./logo.png" alt="EPS Logo" className="h-12 w-auto" />
-          </Link>
-        </div>
-        
+        <NavLink to="/">
+          <img src="./logo.png" alt="EPS Logo" className="h-12 w-auto" />
+        </NavLink>
+
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-8 items-center">
-          <Link
-            to="/"
-            className="text-black text-lg font-medium hover:text-cyan-700 transition duration-300 ease-in-out"
-          >
-            Home
-          </Link>
-          <Link
-            to="/about"
-            className="text-black text-lg font-medium hover:text-cyan-700 transition duration-300 ease-in-out"
-          >
-            About
-          </Link>
-          <Link
-            to="/productandservices"
-            className="text-black text-lg font-medium hover:text-cyan-700 transition duration-300 ease-in-out"
-          >
+          <NavLink to="/" className={linkClasses}>Home</NavLink>
+          <NavLink to="/about" className={linkClasses}>About</NavLink>
+          <NavLink to="/productandservices" className={linkClasses}>
             Product & Services
-          </Link>
-          <Link
-            to="/achivements"
-            className="text-black text-lg font-medium hover:text-cyan-700 transition duration-300 ease-in-out"
-          >
+          </NavLink>
+          <NavLink to="/achivements" className={linkClasses}>
             Achievements
-          </Link>
-          <Link
-            to="/contact"
-            className="text-black text-lg font-medium hover:text-cyan-700 transition duration-300 ease-in-out"
+          </NavLink>
+          <NavLink to="/contact" className={linkClasses}>Contact</NavLink>
+          <a
+            href="https://www.linkedin.com/company/eps-electricals"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-black hover:text-blue-600 transition-colors duration-300"
+            title="Follow us on LinkedIn"
           >
-            Contact
-          </Link>
+            <FaLinkedinIn size={22} />
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
@@ -57,63 +55,56 @@ const Navbar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className="text-black focus:outline-none"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              />
-            </svg>
+            ☰
           </button>
         </div>
       </div>
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-blue-700 text-white py-4 px-4 shadow-md transition duration-500 ease-in-out">
-          <Link
-            to="/"
-            className="block text-lg font-medium py-2 px-4 hover:bg-blue-600 rounded transition duration-300 ease-in-out"
-            onClick={handleLinkClick}
-          >
+        <div className="md:hidden bg-blue-700 text-white py-4 px-4">
+          <NavLink to="/" className={mobileLinkClasses} onClick={handleLinkClick}>
             Home
-          </Link>
-          <Link
-            to="/about"
-            className="block text-lg font-medium py-2 px-4 hover:bg-blue-600 rounded transition duration-300 ease-in-out"
-            onClick={handleLinkClick}
-          >
+          </NavLink>
+          <NavLink to="/about" className={mobileLinkClasses} onClick={handleLinkClick}>
             About
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/productandservices"
-            className="block text-lg font-medium py-2 px-4 hover:bg-blue-600 rounded transition duration-300 ease-in-out"
+            className={mobileLinkClasses}
             onClick={handleLinkClick}
           >
             Product & Services
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/achivements"
-            className="block text-lg font-medium py-2 px-4 hover:bg-blue-600 rounded transition duration-300 ease-in-out"
+            className={mobileLinkClasses}
             onClick={handleLinkClick}
           >
             Achievements
-          </Link>
-          <Link
+          </NavLink>
+          <NavLink
             to="/contact"
-            className="block text-lg font-medium py-2 px-4 hover:bg-blue-600 rounded transition duration-300 ease-in-out"
+            className={mobileLinkClasses}
             onClick={handleLinkClick}
           >
             Contact
-          </Link>
+          </NavLink>
+          <a
+            href="https://www.linkedin.com/company/eps-electricals/posts/?feedView=all"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block text-lg font-medium py-2 px-4 rounded hover:bg-blue-600 transition"
+            onClick={handleLinkClick}
+          >
+            <div className="flex items-center gap-2">
+              <FaLinkedinIn />
+
+            </div>
+          </a>
+
         </div>
+
       )}
     </nav>
   );

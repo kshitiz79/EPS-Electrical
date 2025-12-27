@@ -3,106 +3,120 @@ import React from 'react'
 const Contact = () => {
   return (
     <>
-      <section>
-        <div>
-          <h1 className='text-5xl sm:text-7xl font-bold ml-8 sm:ml-32 mt-8 sm:mt-16'>
+      <section className="mt-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
+          <h1 className="text-5xl lg:text-7xl font-bold">
             Contact
           </h1>
-          <p className='ml-4 sm:ml-72 w-10/12 sm:w-3/12 mt-4 sm:mt-7 mb-6 sm:mb-14'>
+          <p className="mt-7 mb-14 text-lg lg:w-7/12">
             We’d love to hear from you! Whether you have a question about our products, need assistance, or just want to say hello, we’re here to help. Feel free to reach out using the contact information below:
           </p>
         </div>
       </section>
 
-      <section>
-        <div className="w-full sm:w-1/2 flex flex-col justify-center items-center text-center sm:text-left">
-          <h1 className="font-bold text-4xl sm:text-6xl">
-            Have Questions?
-          </h1>
-          <p className='ml-0 sm:ml-32 mt-2 px-4 sm:px-14'>
-            If you require assistance with an order, product, or any other inquiry, our customer support team is ready to help. You can reach them by:
-          </p>
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
+          <div className="lg:w-2/3">
+            <h1 className="font-bold text-4xl lg:text-5xl mb-6">
+              Have Questions?
+            </h1>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              If you require assistance with an order, product, or any other inquiry, our customer support team is ready to help. You can reach them by:
+            </p>
+          </div>
         </div>
       </section>
 
-      <section className="flex flex-col lg:flex-row justify-between items-start px-8 sm:px-28 mt-14">
-        {/* Left Column: Contact Info */}
-        <div className="w-full lg:w-1/2 mb-8 lg:mb-0">
-          <h2 className="font-bold text-2xl mb-4">Emergency? Call Us:</h2>
-          <p className="text-lg mb-6">+91 9901034214</p>
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-0">
+          <div className="flex flex-col lg:flex-row gap-16 items-start">
+            {/* Left Column: Contact Info */}
+            <div className="w-full lg:w-1/2">
+              <div className="space-y-12">
+                <div>
+                  <h2 className="font-bold text-2xl mb-2 text-gray-900">Emergency? Call Us:</h2>
+                  <p className="text-xl text-blue-600 font-semibold">+91 9901034214</p>
+                </div>
 
-          <h2 className="font-bold text-2xl mb-4 mt-12">Send Us Mail</h2>
-          <p className="text-lg mb-6">rajeev@epselectricals.com</p>
+                <div>
+                  <h2 className="font-bold text-2xl mb-2 text-gray-900">Send Us Mail</h2>
+                  <p className="text-xl text-blue-600 font-semibold">rajeev@epselectricals.com</p>
+                </div>
 
-          <h2 className="font-bold text-2xl mb-4 mt-20">Find the Studio</h2>
-          <div className="w-full h-64 mb-20">
-            {/* Embedded Google Map */}
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.176768771719!2d77.67936501435885!3d12.84723482143986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae72679744baf5%3A0x9d9a6767d982f5ad!2sGM%20INFINITE!5e0!3m2!1sen!2sin!4v1696939079609!5m2!1sen!2sin"
-              className="w-full h-full border-0"
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            ></iframe>
+                <div>
+                  <h2 className="font-bold text-2xl mb-6 text-gray-900">Find Us</h2>
+                  <div className="w-full h-80 rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3890.4703713578374!2d77.66921617507371!3d12.812852887488186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDQ4JzQ2LjMiTiA3N8KwNDAnMTguNSJF!5e0!3m2!1sen!2sin!4v1766824697155!5m2!1sen!2sin"
+                      className="w-full h-full border-0"
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column: Contact Form */}
+            <div className="w-full lg:w-1/2 bg-white p-8 lg:p-10 rounded-2xl shadow-xl shadow-gray-100 border border-gray-100">
+              <h2 className="text-3xl font-bold mb-8 text-gray-900">Get in Touch</h2>
+              <form>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
+                      Name
+                    </label>
+                    <input
+                      className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      id="name"
+                      type="text"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
+                      Email Address
+                    </label>
+                    <input
+                      className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                      id="email"
+                      type="email"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                </div>
+                <div className="mb-6">
+                  <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="subject">
+                    Subject
+                  </label>
+                  <input
+                    className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    id="subject"
+                    type="text"
+                    placeholder="Inquiry Subject"
+                  />
+                </div>
+                <div className="mb-8">
+                  <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
+                    Your Message
+                  </label>
+                  <textarea
+                    className="w-full px-4 py-3 rounded-xl bg-gray-50 border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                    id="message"
+                    rows="4"
+                    placeholder="How can we help?"
+                  ></textarea>
+                </div>
+                <button
+                  className="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-6 rounded-xl shadow-lg shadow-blue-200 transition-all duration-300 transform hover:-translate-y-1"
+                  type="button"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
-        </div>
-
-        {/* Right Column: Contact Form */}
-        <div className="w-full lg:w-1/2 lg:ml-20">
-          <form className="pt-6 pb-8 mb-4">
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                Name
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none "
-                id="name"
-                type="text"
-                placeholder="Your Name"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                Email Address
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none"
-                id="email"
-                type="email"
-                placeholder="Your Email Address"
-              />
-            </div>
-            <div className="mb-4">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="subject">
-                Subject
-              </label>
-              <input
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none "
-                id="subject"
-                type="text"
-                placeholder="Subject"
-              />
-            </div>
-            <div className="mb-6">
-              <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-                Your Message
-              </label>
-              <textarea
-                className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none "
-                id="message"
-                rows="4"
-                placeholder="Your Message"
-              ></textarea>
-            </div>
-            <div className="flex items-center justify-between">
-              <button
-                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none "
-                type="button"
-              >
-                Send Message
-              </button>
-            </div>
-          </form>
         </div>
       </section>
     </>

@@ -7,7 +7,7 @@ const Footer = () => {
             {/* About Us */}
             <div>
               <h2 className="font-semibold text-lg">About us:</h2>
-              <p className="mt-4">
+              <p className="md:mt-0 mt-4">
                 EPS Electricals & Services was established in the year 2020, as an Electrical Engineering Contractors.
                 With our hard work and sheer commitment, today, our organization is standing amidst the leading Electrical Contracting Service providers.
               </p>
@@ -37,7 +37,7 @@ const Footer = () => {
             {/* EV Infra & E-mobility Solutions */}
             <div>
               <h2 className="font-semibold text-lg">Ev Infra & E-mobility Solutions:</h2>
-              <ul className="mt-4 space-y-2">
+              <ul className="md:mt-0 mt-4 md:space-y-0 space-y-2">
                 <li>AC Charger</li>
                 <li>AC Type 2 Charger</li>
                 <li>DC Charger DC Charger</li>
@@ -51,15 +51,22 @@ const Footer = () => {
             <div className='flex flex-col md:flex-row justify-between gap-8 mt-8'>
               <div>
                 <h2 className="font-semibold text-lg">Address :</h2>
-                <p className="">
-                  Sy no 27/4A4 (Old 27/4A2), <br />
-                  Yarandahalli Village, Bommasandra Indl Area, <br /> Jigani Link Road, Bangalore 560105
-                </p>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=Sy+no+27/4A4+(Old+27/4A2),+Yarandahalli+Village,+Bommasandra+Indl+Area,+Jigani+Link+Road,+Bangalore+560105"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  <p className="">
+                    Sy no 27/4A4 (Old 27/4A2), <br />
+                    Yarandahalli Village, Bommasandra Indl Area, <br /> Jigani Link Road, Bangalore 560105
+                  </p>
+                </a>
               </div>
 
               <div>
                 <h2 className="font-semibold text-lg">Contact Us :</h2>
-                <ul className="mt-4 space-y-2">
+                <ul className="md:mt-0 mt-4 md:space-y-1 space-y-2">
                   <li>
                     <span className='font-extrabold'>Call us: </span>
                     <a href="tel:+919901034214">+91 9901034214</a>
@@ -69,7 +76,7 @@ const Footer = () => {
                     <a href="mailto:rajeev@epselectricals.com">rajeev@epselectricals.com</a>
                   </li>
                   <li>
-                    <span className='font-extrabold'>Linkdin: </span>
+                    <span className='font-extrabold'>Linkedin: </span>
                     <a href="https://www.linkedin.com/company/eps-electricals/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                       EPS Electricals LinkedIn
                     </a>
@@ -79,13 +86,6 @@ const Footer = () => {
             </div>
           </div>
 
-
-
-
-
-
-
-
         </div>
       </footer>
 
@@ -93,9 +93,9 @@ const Footer = () => {
       <footer className=" text-white py-2 bg-black">
         <div className="max-w-7xl mx-auto   ">
           <div className=" pt-8 flex flex-col sm:flex-row justify-between text-sm mb-9">
-            <p>COPYRIGHT © EPS Electricals 2024</p>
+            <p>COPYRIGHT © EPS Electricals 2026</p>
             <p>
-              Design And Managed By {' '}
+              Design and Managed By {' '}
               <a href="https://rbshstudio.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">
                 RBSH Studio
               </a>

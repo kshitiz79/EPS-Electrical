@@ -24,16 +24,16 @@ const ReviewsSection = () => {
           {/* Trust Statement */}
           <div className="text-center md:text-left">
             <h3 className="text-3xl font-bold">
-            Trusted by over 7000 Worldwide. Since 2024.
+              Trusted by over 7000 Worldwide. Since 2024.
             </h3>
             <div >
-            <h2 className="font-extrabold mt-6">Rajeev</h2>
+              <h2 className="font-extrabold mt-6">Rajeev Ranjan <span className="text-gray-500 font-semibold">(Director)</span> </h2>
 
-            <p className="mt-5">Best Control panel & fire fighting panel manufacturing company. best quality and delivery.</p>
+              <p className="md:mt-0 mt-5">Best Control panel & fire fighting panel manufacturing company. best quality and delivery.</p>
 
             </div>
           </div>
-      
+
         </div>
       </div>
     </div>
