@@ -7,6 +7,7 @@ import Layout from './layout/layout';
 import ProductNservices from './pages/ProductNservices/ProductNservices';
 import SingleProductPage from './pages/ProductNservices/SingleProductPage';
 import Achivements from './pages/Achivememts/Achivements';
+import Blog from './pages/Blog/Blog';
 
 function App() {
   return (
@@ -19,8 +20,11 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="achivements" element={<Achivements />} />
           {/* Use element instead of component */}
-          <Route path="product/:id" element={<SingleProductPage />} />
-          
+          <Route path="blogs" element={<Blog />} />
+
+
+
+          <Route path="dashboard/admin" element={<h1>Admin Dashboard</h1>} />
         </Route>
       </Routes>
     </Router>
