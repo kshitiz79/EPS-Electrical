@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 
 import { FaLinkedinIn, FaExternalLinkAlt } from "react-icons/fa";
@@ -13,7 +13,7 @@ const BlogCard = ({ blog, onEdit, onDelete }) => {
 
     // Construct image URL
     // If image is a local path (starts with /), prepend the backend base URL
-    const API_BASE = process.env.NEXT_PUBLIC_API_BASE_URL || "https://upfbackend.onrender.com/api";
+    const API_BASE = import.meta.env.VITE_API_BASE_URL || "https://epsbackend-e3p1.onrender.com/api";
     const BASE_URL = API_BASE.replace('/api', ''); // Get the root domain (e.g. http://localhost:5000)
 
     const imageSrc = image && image.startsWith('/')
@@ -24,21 +24,20 @@ const BlogCard = ({ blog, onEdit, onDelete }) => {
         <div className="group relative bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 flex flex-col h-full transform hover:-translate-y-1">
             {/* Image Container */}
             <div className="relative h-56 w-full overflow-hidden">
-                <Image
+                <img
                     src={imageSrc}
                     alt={title}
-                    fill
-                    priority
-                    className=" group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-start p-4">
-                    <Link
+                    <a
                         href={displayLink || "#"}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="text-white flex items-center gap-2 font-medium hover:underline"
                     >
                         Read on LinkedIn <FaExternalLinkAlt size={12} />
-                    </Link>
+                    </a>
                 </div>
             </div>
 
@@ -62,9 +61,10 @@ const BlogCard = ({ blog, onEdit, onDelete }) => {
 
                 {/* Footer */}
                 <div className="pt-4 border-t border-gray-100 mt-auto flex justify-between items-center">
-                    <Link
+                    <a
                         href={displayLink || "#"}
                         target="_blank"
+                        rel="noopener noreferrer"
                         className="flex items-center gap-2 text-[#0a1f55] font-semibold text-sm hover:text-[#0a1f55]/80 transition-colors"
                         title="View LinkedIn Post"
                     >
@@ -72,7 +72,7 @@ const BlogCard = ({ blog, onEdit, onDelete }) => {
                             <FaLinkedinIn />
                         </span>
                         View Post
-                    </Link>
+                    </a>
 
                     {/* Action Buttons */}
                     {(onEdit || onDelete) && (

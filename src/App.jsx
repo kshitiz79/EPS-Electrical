@@ -8,6 +8,7 @@ import ProductNservices from './pages/ProductNservices/ProductNservices';
 import SingleProductPage from './pages/ProductNservices/SingleProductPage';
 import Achivements from './pages/Achivememts/Achivements';
 import Blog from './pages/Blog/Blog';
+import Dashboard from './pages/Dashbaord/Dashboard';
 
 function App() {
   return (
@@ -22,9 +23,8 @@ function App() {
           {/* Use element instead of component */}
           <Route path="blogs" element={<Blog />} />
 
+          <Route path="dashboard/admin" element={<Dashboard />} />
 
-
-          <Route path="dashboard/admin" element={<h1>Admin Dashboard</h1>} />
         </Route>
       </Routes>
     </Router>

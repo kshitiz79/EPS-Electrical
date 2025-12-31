@@ -83,12 +83,22 @@ const Navbar = () => {
           >
             Achievements
           </NavLink>
+
+          
           <NavLink
             to="/contact"
             className={mobileLinkClasses}
             onClick={handleLinkClick}
           >
             Contact
+          </NavLink>
+
+          <NavLink
+            to="/blogs"
+            className={mobileLinkClasses}
+            onClick={handleLinkClick}
+          >
+            Blogs
           </NavLink>
           <a
             href="https://www.linkedin.com/company/eps-electricals/posts/?feedView=all"

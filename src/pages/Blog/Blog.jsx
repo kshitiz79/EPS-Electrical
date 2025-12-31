@@ -9,7 +9,7 @@ export default function Blog() {
     // Safe client-side env lookup: prefer Vite (import.meta.env), then process if present, else fallback.
 const API_BASE =
   import.meta.env.VITE_API_BASE_URL ||
-  "https://upfbackend.onrender.com/api";
+  "https://epsbackend-e3p1.onrender.com/api";
 
 
     useEffect(() => {
