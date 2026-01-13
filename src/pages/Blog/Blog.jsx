@@ -6,11 +6,9 @@ import BlogCard from "../../components/Dashboard/BlogCard.jsx";
 export default function Blog() {
     const [blogs, setBlogs] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
-    // Safe client-side env lookup: prefer Vite (import.meta.env), then process if present, else fallback.
-const API_BASE =
-  import.meta.env.VITE_API_BASE_URL ||
-  "https://epsbackend-e3p1.onrender.com/api";
-
+    const API_BASE = (typeof window !== 'undefined' && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'))
+        ? "https://epsbackend-e3p1.onrender.com/api"
+        : (process.env.NEXT_PUBLIC_API_BASE_URL || "https://epsbackend-e3p1.onrender.com/api");
 
     useEffect(() => {
         // Fetch blogs from backend
@@ -27,7 +25,6 @@ const API_BASE =
         };
         load();
     }, [API_BASE]);
-
     return (
         <div className="min-h-screen bg-white pt-10 pb-20">
             <div className="max-w-7xl mx-auto px-6">
