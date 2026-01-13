@@ -143,7 +143,7 @@ const CreateBlogModal = ({ isOpen, onClose, onCreate, initialData }) => {
                                     <img
                                         src={formData.imagePreview.startsWith('blob:') || formData.imagePreview.startsWith('http')
                                             ? formData.imagePreview
-                                            : `${process.env.NEXT_PUBLIC_API_BASE_URL?.replace('/api', '') || 'http://localhost:5001'}${formData.imagePreview}`
+                                            : `${import.meta.env.VITE_API_BASE_URL?.replace('/api', '') || 'http://localhost:5001'}${formData.imagePreview}`
                                         }
                                         alt="Preview"
                                         className="w-full h-full object-cover"
