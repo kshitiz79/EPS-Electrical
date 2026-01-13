@@ -38,6 +38,7 @@ const Navbar = () => {
             Achievements
           </NavLink>
           <NavLink to="/contact" className={linkClasses}>Contact</NavLink>
+          <NavLink to="/blogs" className={linkClasses}>Blogs</NavLink>
           <a
             href="https://www.linkedin.com/company/eps-electricals"
             target="_blank"
