@@ -22,9 +22,7 @@ function App() {
           <Route path="achivements" element={<Achivements />} />
           {/* Use element instead of component */}
           <Route path="blogs" element={<Blog />} />
-
           <Route path="dashboard/admin" element={<Dashboard />} />
-
         </Route>
       </Routes>
     </Router>
