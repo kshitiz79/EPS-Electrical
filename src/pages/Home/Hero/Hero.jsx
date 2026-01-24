@@ -61,38 +61,7 @@ const HeroSection = () => {
   };
 
   return (
-    <div className="relative bg-gray-800 text-white h-[50vh] lg:h-screen overflow-hidden">
-
-      {/* ================= Background Videos ================= */}
-      {/* <div
-        className={`absolute inset-0 transition-opacity duration-700 ${showSecondVideo ? "opacity-0" : "opacity-100"
-          }`}
-      >
-        <video className="w-full h-full object-cover" autoPlay muted loop>
-          <source src="./video2.mp4" type="video/mp4" />
-        </video>
-      </div>
-
-      <div
-        className={`absolute inset-0 transition-opacity duration-700 ${showSecondVideo ? "opacity-100" : "opacity-0"
-          }`}
-      >
-        <video className="w-full h-full object-cover" autoPlay muted loop>
-          <source src="./video.mp4" type="video/mp4" />
-        </video>
-      </div> */}
-
-      {/* ================= Text Overlay ================= */}
-      {/* {showText && (
-        <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center px-4">
-          <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold mb-4">
-            E P S Electricals
-          </h1>
-          <p className="text-base md:text-xl lg:text-2xl">
-            E P S Electricals & Services was established in the year 2020
-          </p>
-        </div>
-      )} */}
+    <div className="relative bg-gray-800 text-white h-[24.1vh] lg:h-[95vh] overflow-hidden">
 
       {/* ================= Award Carousel ================= */}
       <div className="w-full h-full overflow-hidden rounded-xl bg-black/40">
@@ -106,7 +75,7 @@ const HeroSection = () => {
                 <img
                   src={item.src}
                   alt={`carousel-${index}`}
-                  className="w-full h-full object-cover"
+                  className="md:w-full w-auto md:h-full h-auto object-cover"
                 />
               ) : (
                 <video

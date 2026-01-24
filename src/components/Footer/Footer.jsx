@@ -90,7 +90,7 @@ const Footer = () => {
       </footer>
 
 
-      <footer className=" text-white py-2 bg-black">
+      <footer className=" text-white py-2 bg-black md:px-0 px-6">
         <div className="max-w-7xl mx-auto   ">
           <div className=" pt-8 flex flex-col sm:flex-row justify-between text-sm mb-9">
             <p>COPYRIGHT © EPS Electricals 2026</p>
